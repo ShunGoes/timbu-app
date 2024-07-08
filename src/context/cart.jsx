@@ -1,12 +1,22 @@
 import { createContext, useState, useEffect, useContext } from "react";
+import helper from "../helper/helper";
 
 const CartContext = createContext({
-  cartItems: [],
+  cartItems: [ ],
   addItemsToCart: () => {},
 });
 
 export const CartContextProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([
+    {
+      id:0,
+      name: "Santin Sundress",
+      price: 49.90,
+      size: "S,M,L,XL,XXL",
+      color: ["#F0B303","#000000CC"],
+      image: helper.LgYellowDress
+  },
+  ]);
 
   const unique_cart_items = new Set(cartItems);
 

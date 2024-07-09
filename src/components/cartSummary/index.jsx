@@ -7,7 +7,7 @@ const CartSummary = () => {
     const navigate = useNavigate()
 
     function goToCheckoutPage(){
-        navigate("checkout")
+        navigate("/checkout")
     }
   return (
     <div className=" lg:w-[25%]  mb-5 lg:mt-0  rounded-[20px] bg-[#F0F0F0] w-[90%] mt-6 mx-auto p-[10px] lg:py-[20px] flex flex-col items-center  ">

@@ -9,13 +9,13 @@ const CartContext = createContext({
 export const CartContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([
     {
-      id:0,
-      name: "Santin Sundress",
-      price: 49.90,
-      size: "S,M,L,XL,XXL",
-      color: ["#F0B303","#000000CC"],
-      image: helper.LgYellowDress
-  },
+    id:0,
+    name: "Santin Sundress",
+    price: 49.90,
+    size: "S,M,L,XL,XXL",
+    color: ["#F0B303","#000000CC"],
+    image: helper.LgYellowDress
+},
   ]);
 
   const unique_cart_items = new Set(cartItems);

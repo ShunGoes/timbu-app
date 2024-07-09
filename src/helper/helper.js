@@ -13,10 +13,24 @@ import {default as LgGoldLoop} from "../assets/lg-gold-loop.svg"
 import {default as LgMensWear} from "../assets/lg-mens-wear.svg"
 import {default as LgYellowDress} from "../assets/lg-yellow-dress.svg"
 import {default as Trash} from "../assets/trash.svg"
+import {default as CaretDown} from "../assets/caret-down.svg"
+import {default as CaretUp} from "../assets/caret-up.svg"
+import {default as Mastercard} from "../assets/mastercard.svg"
+import {default as Paypal} from "../assets/paypal.svg"
+import {default as Error} from "../assets/error.svg"
+import {default as Plus} from "../assets/plus.svg"
+import {default as Card} from "../assets/card.svg"
 
 
 
 export default {
+    Plus,
+    Card,
+    Error,
+    Mastercard,
+    Paypal,
+    CaretDown,
+    CaretUp,
     Trash,
     LgYellowDress,
     LgMensWear,

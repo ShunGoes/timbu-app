@@ -5,7 +5,7 @@ import helper from '../../helper/helper'
 
 const HomePage = () => {
   return (
-    <section>
+    <section className='mb-[70px]'>
       <div className='flex justify-around py-[10px] lg:w-[46%] lg:mx-auto'>
         <p className='font-[500] text-[14px] lg:text-[18px] text-[#5A2C17;]'>New in</p>
         <p className='font-[500] text-[14px] lg:text-[18px] text-[#5A2C17;]'>Dresses</p>
@@ -32,7 +32,7 @@ const HomePage = () => {
       <div>
         <div className='flex justify-between items-center px-3'>
         <h3 className='font-[600] text-[18px] lg:text-[25px] text-[#5A2C17] mt-3 ml-2 lg:w-[95%] lg:mx-auto lg:mt-3'>Top Products</h3>
-          <span className='font-[500] text-[8px] text-[#00000099] lg:text-[12px]'>View All</span>
+          <span className='font-[500] text-[8px] text-[#00000099] pr-4 lg:text-[14px]'>View All</span>
         </div>
 
         <section className='mt-4 mb-5 relative '>
@@ -50,7 +50,7 @@ const HomePage = () => {
               ))
             }
           </div>
-          <div className='absolute flex justify-end pr-[5px] w-full top-[40px]'>
+          <div className='absolute flex justify-end pr-[5px] right-4 p-3 bg-white top-[40px]'>
             <img src={helper.CaretRight} alt="caret right" className='h-[13.51px]' />
           </div>
         </section>

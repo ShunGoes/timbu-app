@@ -3,7 +3,7 @@ import helper from "../../helper/helper";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F6F6F6] w-full flex flex-col justify-between items-center h-[30vh] lg:h-[30vh]">
+    <footer className="bg-[#F6F6F6] w-full flex flex-col justify-between items-center h-[20vh] lg:h-[30vh]">
       <div className="border-t-[0.5px] pt-[30px] rounded-[0.3px] border-[#5A2C17] w-[90%] flex justify-between lg:justify-start  ">
         <div className="w-[50%] lg:w-[30%]   lg:ml-[7rem]">
           <h3 className="font-[600] text-[12.14px] lg:text-[18px] mb-1">

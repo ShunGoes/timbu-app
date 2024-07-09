@@ -1,6 +1,7 @@
 import './index.css'
 import { mobileProducts, Products} from '../../../product-data'
 import ProductCard from '../../components/productCard'
+import helper from '../../helper/helper'
 
 const HomePage = () => {
   return (
@@ -29,10 +30,13 @@ const HomePage = () => {
       </div>
 
       <div>
+        <div className='flex justify-between items-center px-3'>
         <h3 className='font-[600] text-[18px] lg:text-[25px] text-[#5A2C17] mt-3 ml-2 lg:w-[95%] lg:mx-auto lg:mt-3'>Top Products</h3>
+          <span className='font-[500] text-[8px] text-[#00000099] lg:text-[12px]'>View All</span>
+        </div>
 
-        <section className='mt-4 mb-5'>
-          <div className='grid grid-cols-2 gap-3 lg:hidden '>
+        <section className='mt-4 mb-5 relative '>
+          <div className='grid grid-cols-2 gap-3 lg:hidden  px-3 '>
             {
               mobileProducts.map(product => (
                 <ProductCard key={product.id}  product={product}/>
@@ -45,6 +49,9 @@ const HomePage = () => {
                 <ProductCard key={product.id}  product={product}/>
               ))
             }
+          </div>
+          <div className='absolute flex justify-end pr-[5px] w-full top-[40px]'>
+            <img src={helper.CaretRight} alt="caret right" className='h-[13.51px]' />
           </div>
         </section>
       </div>

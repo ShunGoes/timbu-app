@@ -17,19 +17,24 @@ const CheckoutDetails = () => {
 
       <div className="bg-white">
         <div className="w-full hidden lg:flex flex-col gap-2 bg-[#F6F6F6]">
-            <div className="w-full h-[60px] bg-white flex justify-between items-center px-[10px] rounded-[20px]">
-                <p className="font-[400] text-[18px] text-[#00000099]">Contact Information</p>
-                <img src={helper.CaretDown} alt="" />
-            </div>
-            <div className="w-full h-[60px] bg-white flex justify-between items-center px-[10px] rounded-[20px]">
-                <p className="font-[400] text-[18px] text-[#00000099]">Delivery Option</p>
-                <img src={helper.CaretDown} alt="" />
-            </div>
-            <div className="w-full h-[60px] mb-2 bg-white flex justify-between items-center px-[10px] rounded-[20px]">
-                <p className="font-[400] text-[18px] text-[#00000099]">Shipping Address</p>
-                <img src={helper.CaretDown} alt="" />
-            </div>
-
+          <div className="w-full h-[60px] bg-white flex justify-between items-center px-[10px] rounded-[20px]">
+            <p className="font-[400] text-[18px] text-[#00000099]">
+              Contact Information
+            </p>
+            <img src={helper.CaretDown} alt="" />
+          </div>
+          <div className="w-full h-[60px] bg-white flex justify-between items-center px-[10px] rounded-[20px]">
+            <p className="font-[400] text-[18px] text-[#00000099]">
+              Delivery Option
+            </p>
+            <img src={helper.CaretDown} alt="" />
+          </div>
+          <div className="w-full h-[60px] mb-2 bg-white flex justify-between items-center px-[10px] rounded-[20px]">
+            <p className="font-[400] text-[18px] text-[#00000099]">
+              Shipping Address
+            </p>
+            <img src={helper.CaretDown} alt="" />
+          </div>
         </div>
         <div className="flex justify-between border-b-2 border-[#DBDBDB] py-[20px] px-2 rounded-[5px]">
           <p className="text-[18px] font-[600] lg:text-[22px] text-[#000000CC] ">
@@ -41,8 +46,8 @@ const CheckoutDetails = () => {
         {/* Mastercard */}
         <div className=" border-b border-[#DBDBDB] py-[20px] w-[90%] mx-auto lg:mx-0 lg:p-[10px] lg:pb-8">
           <label className="flex gap-4">
-            <input type="radio" name="payment" id="mastercard"  />
-            <img src={helper.Mastercard} alt=" mastercard logo"  />
+            <input type="radio" name="payment" id="mastercard" />
+            <img src={helper.Mastercard} alt=" mastercard logo" />
             <div className="flex flex-col gap-0">
               <p className="font-[600] text-[14px] lg:text-[18px] text-[#000000CC] ">
                 {" "}
@@ -65,8 +70,8 @@ const CheckoutDetails = () => {
         {/* paypal */}
         <div className=" border-b border-[#DBDBDB] py-[20px]  w-[90%] mx-auto lg:mx-0 lg:px-[10px]">
           <label className="flex gap-4">
-            <input type="radio" name="payment" id="mastercard"  />
-            <img src={helper.Paypal} alt=" Paypal logo"  />
+            <input type="radio" name="payment" id="mastercard" />
+            <img src={helper.Paypal} alt=" Paypal logo" />
             <div className="flex flex-col gap-0">
               <p className="font-[600] text-[14px] lg:text-[18px] text-[#000000CC] ">
                 {" "}
@@ -80,7 +85,7 @@ const CheckoutDetails = () => {
         <div className=" border-b border-[#DBDBDB] py-[20px] w-[90%] mx-auto lg:mx-0 lg:px-[10px]">
           <label className="flex gap-4">
             <img src={helper.Plus} alt="plus icon" />
-            <img src={helper.Card} alt=" Card"  />
+            <img src={helper.Card} alt=" Card" />
             <div className="flex flex-col gap-0">
               <p className="font-[600] text-[14px] lg:text-[18px] text-[#000000CC] ">
                 {" "}
@@ -89,8 +94,6 @@ const CheckoutDetails = () => {
             </div>
           </label>
         </div>
-       
-
       </div>
     </div>
   );
